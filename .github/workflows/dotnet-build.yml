@@ -15,8 +15,7 @@ jobs:
         name: Echo Template
         run: echo "This is a reusable step"
         shell: bash
-        
-      
+
       - name: 🧻 Show runtime context
         run: |
           echo "🔑 Runner OS: ${{ runner.os }}"
