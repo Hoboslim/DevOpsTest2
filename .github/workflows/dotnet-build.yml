@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
+  # Job 1: Print runtime context
   print-runtime-context:
     runs-on: ubuntu-latest
 
@@ -28,6 +29,7 @@ jobs:
 
       - *echo-template
 
+  # Job 2: Build and run project
   build-project:
     runs-on: ubuntu-latest
 
@@ -44,5 +46,6 @@ jobs:
         working-directory: DevOpsApp
         run: dotnet build
 
-      - name: Run code
+      - name: Run Project
         run: dotnet run --project DevOpsApp/DevOpsApp.csproj
+
