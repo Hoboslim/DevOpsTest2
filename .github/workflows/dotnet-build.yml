@@ -43,8 +43,7 @@ jobs:
           dotnet-version: '9.0.x'
 
       - name: Build Project
-        working-directory: DevOpsApp.App
-        run: dotnet build
+        run: dotnet build DevOpsApp/DevOpsApp.csproj
 
       - name: Run Project
         run: dotnet run --project DevOpsApp/DevOpsApp.csproj
