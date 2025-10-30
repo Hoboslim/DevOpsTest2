@@ -42,9 +42,6 @@ jobs:
         with:
           dotnet-version: '9.0.x'
 
-      - name: Build Project
-        run: dotnet build DevOpsApp/DevOpsApp.csproj
-
       - name: Run Project
         run: dotnet run --project DevOpsApp/DevOpsApp.csproj
 
